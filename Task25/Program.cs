@@ -23,4 +23,12 @@ int N = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input random positive integer degree: ");
 int D = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"{N} to the power of {D} equals {Pow(N,D)}");
+if (D < 0)
+{
+    Console.Write("Data error: Degree (power) must be positive integer");
+}
+
+else
+{
+    Console.WriteLine($"{N} to the power of {D} equals {Pow(N,D)}");
+}
